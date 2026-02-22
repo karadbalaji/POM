@@ -5,7 +5,7 @@ exports.LoginPage = class LoginPage {
         this.page = page
         this.username_textbox = page.getByLabel('Username')  //Locater is still good no need to update
         this.password_textbox = page.getByLabel('Password')
-        this.login_button = page.getByRole('button', { name: 'Login' }) //no need to update the locator as the name is same but the icon is added in the button which is not effecting the locator
+        this.login_button = page.getByRole('button', { name: 'Login' }) //i changed the file that is final merge confilict resilved
     }
 
     async gotoLoginPage(){
