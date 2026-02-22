@@ -3,7 +3,7 @@ exports.LoginPage = class LoginPage {
     constructor(page) {
 
         this.page = page
-        this.username_textbox = page.getByLabel('Username')
+        this.username_textbox = page.getByLabel('Username')  //Locater is still good no need to update
         this.password_textbox = page.getByLabel('Password')
         this.login_button = page.getByRole('button', { name: 'Login' })
     }
