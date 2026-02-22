@@ -5,7 +5,7 @@ exports.LoginPage = class LoginPage {
         this.page = page
         this.username_textbox = page.getByLabel('Username')  //Locater is still good no need to update
         this.password_textbox = page.getByLabel('Password')
-        this.login_button = page.getByRole('button', { name: 'Login' }) //i changed the file that is final merge confilict resilved
+        this.login_button = page.getByRole('button', { name: 'Login' }) //someone changes the this line
     }
 
     async gotoLoginPage(){
@@ -15,7 +15,7 @@ exports.LoginPage = class LoginPage {
     async login(username, password){
         await this.username_textbox.fill(username)
         await this.password_textbox.fill(password)
-        await this.login_button.click()
+        await this.login_button.click()   // want to check rebase work
     }
 
 }
