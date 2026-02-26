@@ -18,7 +18,7 @@ console.log(".......................... from the hardcoded test form page login.
   await page.getByRole('button', { name: ' Login' }).click();
 })
 
-test.only('invalid login cred', async ({page})=>{
+test('invalid login cred', async ({page})=>{
  const Login = new LoginPage(page)
 
 await Login.gotoLoginPage()
